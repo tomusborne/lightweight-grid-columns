@@ -107,8 +107,8 @@ if ( ! function_exists( 'lgc_shortcodes_css' ) ) :
  */
 add_action( 'wp_enqueue_scripts', 'lgc_shortcodes_css', 99 );
 function lgc_shortcodes_css() {
-	wp_enqueue_style( 'lgc-unsemantic-grid-responsive-tablet', plugins_url('/css/unsemantic-grid-responsive-tablet.min.css', __FILE__), array(), LGC_VERSION, 'all' );
-	wp_enqueue_script( 'lgc-matchHeight', plugins_url('/js/jquery.matchHeight-min.js', __FILE__), array( 'jquery' ), LGC_VERSION, true );
+	wp_enqueue_style( 'lgc-unsemantic-grid-responsive-tablet', plugins_url('/css/unsemantic-grid-responsive-tablet.css', __FILE__), array(), LGC_VERSION, 'all' );
+	wp_register_script( 'lgc-matchHeight', plugins_url('/js/jquery.matchHeight-min.js', __FILE__), array( 'jquery' ), LGC_VERSION, true );
 }
 endif;
 
@@ -130,6 +130,9 @@ function lgc_columns_shortcode( $atts , $content = null ) {
 			'id' => ''
 		), $atts )
 	);
+	
+	if ( 'true' == $equal_heights )
+		wp_enqueue_script( 'lgc-matchHeight' );
 	
 	$content = sprintf( 
 		'<div %9$s class="lgc-column lgc-grid-parent %1$s %2$s %3$s %4$s"><div %6$s class="inside-grid-column %5$s">%7$s</div></div>%8$s',
