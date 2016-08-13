@@ -98,9 +98,16 @@ By default, JS equal heights are set to "true".
 
 == Changelog ==
 
+= 0.7 =
+* Fix weird scroll behavior caused by transitions and matchHeight
+* Only load matchHeight on pages where columns are present with it enabled
+
+= 0.6 =
+* Fix column class bug causing some columns not to work
+
 = 0.5 =
 * Move margin-bottom setting to inner element so style attribute can overwrite it
-* Adjust lgc_columns_helper function to fix issue with <p> and <br /> tags around the shortcode
+* Adjust lgc_columns_helper function to fix issue with `<p>` and `<br />` tags around the shortcode
 * Add jQuery matchHeight to match the height of columns for better responsive user experience
 * Reduce the file size of stylesheet considerably
 
@@ -119,9 +126,16 @@ By default, JS equal heights are set to "true".
 
 == Upgrade Notice ==
 
+= 0.7 =
+* Fix weird scroll behavior caused by transitions and matchHeight
+* Only load matchHeight on pages where columns are present with it enabled
+
+= 0.6 =
+* Fix column class bug causing some columns not to work
+
 = 0.5 =
 * Move margin-bottom setting to inner element so style attribute can overwrite it
-* Adjust lgc_columns_helper function to fix issue with <p> and <br /> tags around the shortcode
+* Adjust lgc_columns_helper function to fix issue with `<p>` and `<br />` tags around the shortcode
 * Add jQuery matchHeight to match the height of columns for better responsive user experience
 * Reduce the file size of stylesheet considerably
 
