@@ -393,10 +393,16 @@ jQuery(document).ready( function($) {
 		row.first().addClass('lgc-first');
 		row.last().addClass('lgc-last');
 	});
-	
-	$('.lgc-equal-heights').on('click', function(){ 
-		$( this ).on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function() {
-			jQuery.fn.matchHeight._update();
+	$('.lgc-equal-heights').on('click', function(){
+		var _this = $( this );
+		var height = _this.children().height();
+		
+		$( this ).on('transitionend webkitTransitionEnd oTransitionEnd otransitionend MSTransitionEnd', function( event ) {
+			var changedHeight = _this.children().height();
+			if ( height !== changedHeight ) {
+				$.fn.matchHeight._update();
+				$.fn.matchHeight._maintainScroll = true;
+			}
 		});
 	});
 });
