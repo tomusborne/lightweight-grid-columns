@@ -1,0 +1,33 @@
+== changelog ==
+
+(6/3/2016) - 0.6
+* Fix column class bug causing some columns not to work
+
+----
+
+(6/2/2016) - 0.5
+* Move margin-bottom setting to inner element so style attribute can overwrite it
+* Adjust lgc_columns_helper function to fix issue with <p> and <br /> tags around the shortcode
+* Add jQuery matchHeight to match the height of columns for better responsive user experience
+* Reduce the file size of stylesheet considerably
+
+----
+
+(6/20/2015) - 0.4
+[*] Show TinyMCE icon on all post types
+
+----
+
+(6/19/2015) - 0.3
+[!] Fix bug where TinyMCE icon wasn't showing up if SiteOrigin Page Builder and Black Studio TinyMCE Widget were activated together
+[+] Add IE 7 & 8 compatibility
+
+----
+
+(5/21/2015) - 0.2
+[*] Allow line breaks inside columns
+
+----
+
+(5/15/2015) - 0.1
+Initial Release

@@ -1,0 +1,15 @@
+Lightweight Grid Columns is licensed under the GNU General Public License v2 or later
+More details here: http://www.gnu.org/licenses/gpl-2.0.html
+
+== Unsemantic Framework ==
+
+Lightweight Grid Columns is built using the awesome Unsemantic Framework which is licensed under GPL.
+http://unsemantic.com/
+http://www.gnu.org/licenses/gpl.html
+
+== jQuery matchHeight ==
+
+Lightweight Grid Columns uses jQuery matchHeight to improve the responsive functionality of the columns.
+http://brm.io/jquery-match-height/
+jquery.matchHeight.js is licensed under The MIT License (MIT) 
+Copyright (c) 2014 liabru
