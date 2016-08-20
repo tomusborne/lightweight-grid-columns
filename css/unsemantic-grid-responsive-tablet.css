@@ -577,7 +577,7 @@
     width: 100%;
   }
 }
-@media (min-width: 768px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1025px) {
   .tablet-push-5, .lgc-tablet-pull-5, .lgc-tablet-push-10, .lgc-tablet-pull-10, .lgc-tablet-push-15, .lgc-tablet-pull-15, .lgc-tablet-push-20, .lgc-tablet-pull-20, .lgc-tablet-push-25, .lgc-tablet-pull-25, .lgc-tablet-push-30, .lgc-tablet-pull-30, .lgc-tablet-push-35, .lgc-tablet-pull-35, .lgc-tablet-push-40, .lgc-tablet-pull-40, .lgc-tablet-push-45, .lgc-tablet-pull-45, .lgc-tablet-push-50, .lgc-tablet-pull-50, .lgc-tablet-push-55, .lgc-tablet-pull-55, .lgc-tablet-push-60, .lgc-tablet-pull-60, .lgc-tablet-push-65, .lgc-tablet-pull-65, .lgc-tablet-push-70, .lgc-tablet-pull-70, .lgc-tablet-push-75, .lgc-tablet-pull-75, .lgc-tablet-push-80, .lgc-tablet-pull-80, .lgc-tablet-push-85, .lgc-tablet-pull-85, .lgc-tablet-push-90, .lgc-tablet-pull-90, .lgc-tablet-push-95, .lgc-tablet-pull-95, .lgc-tablet-push-33, .lgc-tablet-pull-33, .lgc-tablet-push-66, .lgc-tablet-pull-66 {
     position: relative;
   }
@@ -1490,13 +1490,16 @@
 
 /* GP Column Custom CSS */
 .lgc-column p {
-	margin-bottom: 0;
-	margin-top: 1.5em;
+	margin-bottom: 1.5em;
 }
 
 .inside-grid-column {
 	padding: 0 10px 0 10px;
 	margin-bottom: 1.5em;
+}
+
+.inside-grid-column > p:last-child {
+	margin-bottom: 0;
 }
 
 @media (max-width:767px) {
