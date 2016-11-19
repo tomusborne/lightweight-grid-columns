@@ -135,7 +135,7 @@ function lgc_columns_shortcode( $atts , $content = null ) {
 		wp_enqueue_script( 'lgc-matchHeight' );
 	
 	$content = sprintf( 
-		'<div %9$s class="lgc-column lgc-grid-parent %1$s %2$s %3$s %4$s"><div %6$s class="inside-grid-column %5$s">%7$s</div></div>%8$s',
+		'<div %9$s class="lgc-column lgc-grid-parent %1$s %2$s %3$s %4$s %5$s"><div %6$s class="inside-grid-column">%7$s</div></div>%8$s',
 		'lgc-grid-' . intval( $grid ),
 		'lgc-tablet-grid-' . intval( $tablet_grid ),
 		'lgc-mobile-grid-' . intval( $mobile_grid ),
