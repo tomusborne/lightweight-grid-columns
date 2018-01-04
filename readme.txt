@@ -2,9 +2,9 @@
 Contributors: edge22
 Donate link: https://generatepress.com/ongoing-development
 Tags: columns, columns shortcode, grid columns
-Requires at least: 4.0
-Tested up to: 4.5.2
-Stable tag: 0.7
+Requires at least: 4.5
+Tested up to: 4.9
+Stable tag: 1.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -55,20 +55,20 @@ Fair enough! Simply add the shortcode to your content.
 For example, the below will output 4 columns on desktop, 2 columns on tablet and 1 column on mobile
 
 	[lgc_column grid="25" tablet_grid="50" mobile_grid="100"]Some content[/lgc_column]
-	
+
 	[lgc_column grid="25" tablet_grid="50" mobile_grid="100"]Some content[/lgc_column]
-	
+
 	[lgc_column grid="25" tablet_grid="50" mobile_grid="100"]Some content[/lgc_column]
-	
+
 	[lgc_column grid="25" tablet_grid="50" mobile_grid="100" last="true"]Some content[/lgc_column]
-	
+
 Take note of our last column - see the last="true" part? Don't forget ;)
 
 = What are my options for percentages? =
 
 This is taken directly from (http://unsemantic.com):
 
-There are grid classes named grid-x where "x" is a number that represents the percentage width of each grid unit. These cover multiples of 5, up to 100 (grid-5, grid-10 ... grid-95, grid-100). There are also classes for dividing a page into thirds: grid-33 and grid-66 which are 33.3333% and 66.6667% wide, respectively. 
+There are grid classes named grid-x where "x" is a number that represents the percentage width of each grid unit. These cover multiples of 5, up to 100 (grid-5, grid-10 ... grid-95, grid-100). There are also classes for dividing a page into thirds: grid-33 and grid-66 which are 33.3333% and 66.6667% wide, respectively.
 
 = Are there any other options I can use in the shortcode? =
 
@@ -77,13 +77,13 @@ Yes!
 You can use:
 
 = class =
-	
+
 	[lgc_column grid="25" tablet_grid="50" mobile_grid="100" class="push-25"]Some content[/lgc_column]
 
 = style =
 
 	[lgc_column grid="25" tablet_grid="50" mobile_grid="100" style="padding-left:0px;"]Some content[/lgc_column]
-	
+
 = equal_heights =
 
 By default, JS equal heights are set to "true".
@@ -97,6 +97,10 @@ By default, JS equal heights are set to "true".
 3. A look at some awesome columns!
 
 == Changelog ==
+
+= 1.0 =
+* Move custom class value to the parent container
+* Code cleanup
 
 = 0.7 =
 * Fix weird scroll behavior caused by transitions and matchHeight
@@ -125,6 +129,10 @@ By default, JS equal heights are set to "true".
 * Initial release
 
 == Upgrade Notice ==
+
+= 1.0 =
+* Move custom class value to the parent container
+* Code cleanup
 
 = 0.7 =
 * Fix weird scroll behavior caused by transitions and matchHeight

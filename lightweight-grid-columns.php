@@ -3,7 +3,7 @@
 Plugin Name: Lightweight Grid Columns
 Plugin URI: https://generatepress.com
 Description: Add columns to your content using easy to use shortcodes.
-Version: 0.7
+Version: 1.0
 Author: Tom Usborne
 Author URI: https://tomusborne.com
 License: GNU General Public License v2 or later
@@ -11,7 +11,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: lightweight-grid-columns
 */
 
-define( 'LGC_VERSION', '0.7');
+define( 'LGC_VERSION', '1.0' );
 
 add_action( 'plugins_loaded', 'lgc_load_textdomain' );
 /**
