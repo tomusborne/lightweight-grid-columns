@@ -12,6 +12,8 @@ Easily add desktop, tablet and mobile friendly columns to your content using an 
 
 == Description ==
 
+**This plugin is no longer maintained due to the new block editor. Please check out [GenerateBlocks](https://generateblocks.com) for a powerful columns block.**
+
 Lightweight Grid Columns are super easy to use! Install and activate the plugin, then look for the columns icon within your TinyMCE toolbar (see screenshots).
 
 Specify your desired desktop, tablet and mobile widths of the columns, add your content and then insert your shortcode into your content.
